@@ -1,3 +1,4 @@
+//? Обнуление
 *,
 *::before,
 *::after {
@@ -6,21 +7,17 @@
   bottom: 0;
   box-sizing: border-box;
 }
-
 a {
   text-decoration: none;
 }
-
 ul,
 ol,
 li {
   list-style: none;
 }
-
 img {
   vertical-align: top;
 }
-
 h1,
 h2,
 h3,
@@ -30,7 +27,6 @@ h6 {
   font-weight: inherit;
   font-size: inherit;
 }
-
 html,
 body {
   height: 100%;
@@ -39,21 +35,8 @@ body {
   font-size: 12px;
   color: #000;
 }
-
-[class*=__container] {
+[class*="__container"] {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-.wrapper {
-  min-height: 100%;
-  overflow: hidden;
-}
-
-.body {
-  height: 100%;
-  line-height: 1;
-  font-size: 16px;
-  color: #000;
 }
