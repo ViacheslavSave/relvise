@@ -9,6 +9,7 @@
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 ul,
 ol,
@@ -32,8 +33,9 @@ body {
   height: 100%;
   line-height: 1;
   font-family: Rubik;
-  font-size: 12px;
-  color: #000;
+  font-size: 14px;
+  color: #252B42;
+  font-weight: 500;
 }
 [class*="__container"] {
   max-width: 1080px;

@@ -8,5 +8,51 @@
   line-height: 1;
   font-size: 16px;
   color: #000;
+  font-family: Montserrat, sans-serif;
+}
+//!----- header -----
+//?--------------------------------------------- header ---------------------------------------------------------
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  &__container {
+    min-height: 104px;
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: inherit;
+  }
+  &__menu {
+    margin-left: 135px;
+  }
+}
+.menu {
+  &__list {
+    display: flex;
+    gap: 0 21px;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    // align-items: center;
+  }
+  &__item {}
+  &__link {
+    color: #737373;
+    line-height: 170%;
+    font-weight: 600;
+  }
+}
+//?--------------------------------------------- header -- end --------------------------------------------------
+.page {
+  flex: 1 1 auto;
 }
 @import "_media.scss";
