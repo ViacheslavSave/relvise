@@ -3,12 +3,13 @@
   min-height: 100%;
   overflow: hidden;
 }
-.body {
+.ibg img {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
-  line-height: 1;
-  font-size: 16px;
-  color: #000;
-  font-family: Montserrat, sans-serif;
+  width: 100%;
+  object-fit: cover;
 }
 //!----- header -----
 //?--------------------------------------------- header ---------------------------------------------------------
@@ -22,6 +23,7 @@
   left: 0;
   width: 100%;
   z-index: 50;
+  height: 104px;
   &__container {
     min-height: 104px;
     display: flex;
@@ -52,6 +54,69 @@
   }
 }
 //?--------------------------------------------- header -- end --------------------------------------------------
+//!----- main-block -----
+//?----------------------------- main-block ------------------------------------
+.page {
+  &__main-block {}
+}
+.main-block {
+  position: relative;
+  &__container {}
+  &__body {
+    padding: 184px 0 191px;
+    position: relative;
+    z-index: 2;
+    max-width: 400px;
+    > *:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+  &__title {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 1.38;
+    letter-spacing: 0.2px;
+    color: #252B42;
+  }
+  &__text {
+    font-size: 20px;
+    line-height: calc(30px /20px);
+    color: #737373;
+  }
+  &__bottons {
+    display: flex;
+    gap: 10px;
+  }
+  &__botton {
+    background: #FF7B47;
+    border-radius: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 48px;
+    padding: 0 36px;
+    font-weight: 700;
+    line-height: calc(21 / 14 * 100%);
+    // line-height: (21px/14px);
+    min-width: 184px;
+    color: #fff;
+    cursor: pointer;
+  }
+  &__botton--border {
+    background-color: #ffffff;
+    color: #0D5C63;
+    border: 1px solid #0D5C63;
+  }
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+//?----------------------------- main-block -- end -----------------------------
 .page {
   flex: 1 1 auto;
 }

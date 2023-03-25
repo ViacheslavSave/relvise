@@ -48,7 +48,9 @@
 //!------------------------  media -- 479px  ------------------------
 @media(max-width:479px) {
   .header {
-    &__container { min-height: 70px;}
+    &__container {
+      min-height: 70px;
+    }
     &__logo {}
     &__menu {
       margin-left: 30px;
@@ -63,3 +65,85 @@
   }
 }
 //?--------------------------------------------- header -- end --------------------------------------------------
+//?----------------------------- main-block -- media ---------------------------
+.page {
+  &__main-block {}
+}
+.main-block {
+  &__container {}
+  &__body {}
+  &__title {}
+  &__text {}
+  &__bottons {}
+  &__botton {}
+  &__botton--border {}
+  &__image {}
+}
+//!------------------------  media -- 1300 px  ------------------------
+@media(max-width:1300px) {
+  .page {
+    &__main-block {}
+  }
+  .main-block {
+    &__container {}
+    &__body {}
+    &__title {}
+    &__text {}
+    &__bottons {}
+    &__botton {}
+    &__botton--border {}
+    &__image {}
+    &__image img {
+      object-position: right;
+    }
+  }
+}
+//!------------------------  media -- 992px  ------------------------
+@media(max-width:992px) {
+  .page {
+    &__main-block {}
+  }
+  .main-block {
+    &__container {}
+    &__body {
+      padding: 104px 0 191px;
+    }
+    &__title {}
+    &__text {}
+    &__bottons {}
+    &__botton {}
+    &__botton--border {}
+    &__image img {
+      opacity: 0.5;
+    }
+  }
+}
+//!------------------------  media -- 479px  ------------------------
+@media(max-width:479px) {
+  .page {
+    &__main-block {}
+  }
+  .main-block {
+    &__container {}
+    &__body {
+      > *:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+    &__title {
+      font-size: 42px;
+      line-height: 1.2;
+    }
+    &__text {
+      color: #3b3b3b;
+    }
+    &__bottons {
+      // flex-direction: column;
+      flex-wrap: wrap;
+    }
+    &__botton {}
+    &__botton--border {}
+    &__image {}
+  }
+}
+//?----------------------------- main-block -- end -----------------------------
