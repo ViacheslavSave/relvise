@@ -11,6 +11,9 @@
   width: 100%;
   object-fit: cover;
 }
+.page {
+  flex: 1 1 auto;
+}
 //!----- header -----
 //?--------------------------------------------- header ---------------------------------------------------------
 .wrapper {
@@ -117,7 +120,53 @@
   }
 }
 //?----------------------------- main-block -- end -----------------------------
+//!----- servises -----
+//?----------------------------- servises ------------------------------------
 .page {
-  flex: 1 1 auto;
+  &__servises {}
 }
+.servises {
+  &__container {}
+  &__body {
+    margin-top: -121px;
+    display: flex;
+    gap: 30px;
+    position: relative;
+    z-index: 10;
+  }
+  &__column {
+    flex: 0 1 33.333%;
+    padding: 35px 0 35px 40px;
+    background-color: #fff;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    // gap: 10px 0;
+    &.active {
+      background: #0D5C63;
+      color: #fff;
+      .item-servise__text {
+        color: #fff;
+      }
+    }
+  }
+  &__items {}
+}
+.item-servise {
+  > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  &__icon {}
+  &__title {
+    max-width: 230px;
+    font-weight: 700;
+    font-size: 24px;
+    // line-height: 32px;
+    line-height: calc(32 / 24 * 100%);
+  }
+  &__text {
+    max-width: 230px;
+    color: #737373;
+    line-height: calc(20px / 14px * 100%);
+  }
+}
+//?----------------------------- servises -- end -----------------------------
 @import "_media.scss";

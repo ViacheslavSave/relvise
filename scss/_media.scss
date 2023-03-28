@@ -11,7 +11,7 @@
 }
 //992
 //!------------------------  media -- 992px  ------------------------
-@media(max-width:992px) {
+@media (max-width: 992px) {
   .header {
     &__container {}
     &__logo {
@@ -31,7 +31,7 @@
   }
 }
 //!------------------------  media -- 767px  ------------------------
-@media(max-width:767px) {
+@media (max-width: 767px) {
   .header {
     &__container {}
     &__logo {}
@@ -46,7 +46,7 @@
   }
 }
 //!------------------------  media -- 479px  ------------------------
-@media(max-width:479px) {
+@media (max-width: 479px) {
   .header {
     &__container {
       min-height: 70px;
@@ -80,7 +80,7 @@
   &__image {}
 }
 //!------------------------  media -- 1300 px  ------------------------
-@media(max-width:1300px) {
+@media (max-width: 1300px) {
   .page {
     &__main-block {}
   }
@@ -99,7 +99,7 @@
   }
 }
 //!------------------------  media -- 992px  ------------------------
-@media(max-width:992px) {
+@media (max-width: 992px) {
   .page {
     &__main-block {}
   }
@@ -119,7 +119,7 @@
   }
 }
 //!------------------------  media -- 479px  ------------------------
-@media(max-width:479px) {
+@media (max-width: 479px) {
   .page {
     &__main-block {}
   }
@@ -141,9 +141,28 @@
       // flex-direction: column;
       flex-wrap: wrap;
     }
-    &__botton {}
+    &__botton {
+      min-width: 290px;
+    }
     &__botton--border {}
     &__image {}
   }
 }
 //?----------------------------- main-block -- end -----------------------------
+//?----------------------------- servises -- media ---------------------------
+
+.page {
+  &__servises {}
+}
+.servises {
+  &__container {}
+  &__body {}
+  &__column {}
+  &__items {}
+}
+.item-servise {
+  &__icon {}
+  &__title {}
+  &__text {}
+}
+//?----------------------------- servises -- end -----------------------------

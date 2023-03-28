@@ -2,23 +2,27 @@
 *,
 *::before,
 *::after {
-  padding: 0;
-  margin: 0;
-  bottom: 0;
+  padding   : 0;
+  margin    : 0;
+  bottom    : 0;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
-  color: inherit;
+  color          : inherit;
 }
+
 ul,
 ol,
 li {
   list-style: none;
 }
+
 img {
   vertical-align: top;
 }
+
 h1,
 h2,
 h3,
@@ -26,19 +30,26 @@ h4,
 h5,
 h6 {
   font-weight: inherit;
-  font-size: inherit;
+  font-size  : inherit;
 }
+
 html,
 body {
   height: 100%;
+
+}
+
+body {
   line-height: 1;
   font-family: Montserrat, sans-serif;
-  font-size: 14px;
-  color: #252B42;
+  font-size  : 14px;
+  color      : #252B42;
   font-weight: 500;
+
 }
+
 [class*="__container"] {
   max-width: 1080px;
-  margin: 0 auto;
-  padding: 0 15px;
+  margin   : 0 auto;
+  padding  : 0 15px;
 }
