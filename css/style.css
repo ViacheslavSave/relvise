@@ -165,39 +165,56 @@ body {
   width: 100%;
 }
 
+.page__servises {
+  margin: -111px 0 0;
+  background: #FAFAFA;
+}
+
 .servises__body {
-  margin-top: -121px;
+  margin: 0 -15px -30px;
   display: flex;
-  gap: 30px;
   position: relative;
   z-index: 10;
+  flex-wrap: wrap;
 }
 .servises__column {
   flex: 0 1 33.333%;
-  padding: 35px 0 35px 40px;
-  background-color: #fff;
+  min-width: 320px;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+.servises__item {
   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  background-color: #fff;
+  padding: 35px;
 }
-.servises__column.active {
-  background: #0D5C63;
-  color: #fff;
+.servises__item > * {
+  max-width: 230px;
 }
-.servises__column.active .item-servise__text {
-  color: #fff;
-}
+
 .item-servise > *:not(:last-child) {
   margin-bottom: 10px;
 }
+.item-servise.active {
+  background: #0D5C63;
+  color: #fff;
+  transition: all 0.3s;
+}
+.item-servise.active .item-servise__text,
+.item-servise.active .item-servise__title {
+  color: #fff;
+}
 .item-servise__title {
-  max-width: 230px;
+  min-height: 65px;
   font-weight: 700;
   font-size: 24px;
   line-height: 133.3333333333%;
+  transition: all 0.3s;
 }
 .item-servise__text {
-  max-width: 230px;
   color: #737373;
-  line-height: 142.8571428571%;
+  line-height: 150%;
+  transition: all 0.3s;
 }
 
 @media (max-width: 992px) {
@@ -236,6 +253,9 @@ body {
   }
 }
 @media (max-width: 479px) {
+  .main-block__body {
+    padding-bottom: 171px;
+  }
   .main-block__body > *:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -251,5 +271,32 @@ body {
   }
   .main-block__botton {
     min-width: 290px;
+  }
+}
+@media (max-width: 992px) {
+  .servises__column {
+    flex: 0 1 50%;
+  }
+  .servises__column:last-child {
+    flex: 0 1 100%;
+  }
+  .servises__item {
+    height: 100%;
+  }
+  .servises__item > * {
+    max-width: 100%;
+  }
+  .item-servise__title {
+    min-height: auto;
+  }
+}
+@media (max-width: 650px) {
+  .servises__column {
+    flex: 0 100%;
+  }
+}
+@media (max-width: 479px) {
+  .servises__item {
+    padding: 20px;
   }
 }

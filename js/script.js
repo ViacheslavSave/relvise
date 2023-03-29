@@ -1,10 +1,10 @@
-let colums = document.querySelectorAll(".servises__column");
+let colums = document.querySelectorAll(".item-servise");
 colums.forEach((element) => {
 	element.addEventListener("mouseover", count(element, colums));
 });
 function count(element, colums) {
 	return (e) => {
-		if (e.target.closest(".servises__column")) {
+		if (e.target.closest(".item-servise")) {
 			colums.forEach((item) => {
 				item.classList.remove("active");
 				let icon = item.querySelector(".item-servise__icon > img");

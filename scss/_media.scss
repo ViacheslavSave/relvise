@@ -125,7 +125,7 @@
   }
   .main-block {
     &__container {}
-    &__body {
+    &__body { padding-bottom:  171px;
       > *:not(:last-child) {
         margin-bottom: 20px;
       }
@@ -150,7 +150,6 @@
 }
 //?----------------------------- main-block -- end -----------------------------
 //?----------------------------- servises -- media ---------------------------
-
 .page {
   &__servises {}
 }
@@ -158,11 +157,87 @@
   &__container {}
   &__body {}
   &__column {}
-  &__items {}
+  &__item {}
 }
 .item-servise {
   &__icon {}
   &__title {}
   &__text {}
 }
+//!------------------------  media -- 992px  ------------------------
+@media(max-width:992px) {
+  .page {
+    &__servises {}
+  }
+  .servises {
+    &__container {}
+    &__body {
+      // flex-wrap: wrap;
+    }
+    &__column {
+      // box-sizing: content-box;
+      flex: 0 1 50%;
+      // height: 212px;
+    }
+    &__column:last-child {
+      flex: 0 1 100%;
+    }
+    &__item {
+      height: 100%;
+      > * {
+        max-width: 100%;
+      }
+    }
+  }
+  .item-servise {
+    &__icon {}
+    &__title {
+      min-height: auto;
+    }
+    &__text {}
+  }
+}
+//!------------------------  media -- 767px  ------------------------
+@media(max-width:650px) {
+  .page {
+    &__servises {}
+  }
+  .servises {
+    &__container {}
+    &__body {}
+    &__column {
+      flex: 0 100%;
+    }
+    &__item {}
+  }
+  .item-servise {
+    &__icon {}
+    &__title {}
+    &__text {}
+  }
+}
+//!------------------------  media -- 479px  ------------------------
+@media(max-width:479px) {
+  .page {
+    &__servises {}
+  }
+  .servises {
+    &__container {}
+    &__body {}
+    &__column {}
+    &__item {
+      padding: 20px;
+    }
+  }
+  .item-servise {
+    &__icon {}
+    &__title {}
+    &__text {}
+  }
+}
 //?----------------------------- servises -- end -----------------------------
+// 992
+// 767
+// 650
+// 479
+// 320
