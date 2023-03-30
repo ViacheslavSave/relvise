@@ -70,6 +70,7 @@
     position: relative;
     z-index: 2;
     max-width: 400px;
+    // margin-bottom: -35px;
     > *:not(:last-child) {
       margin-bottom: 35px;
     }
@@ -123,9 +124,9 @@
 //!----- servises -----
 //?----------------------------- servises ------------------------------------
 .page {
+  background: #FAFAFA;
   &__servises {
     margin: -111px 0 0;
-    background: #FAFAFA;
   }
 }
 .servises {
@@ -144,14 +145,13 @@
   }
   &__column {
     flex: 0 1 33.333%;
-    min-width: 320px;
+    // min-width: 320px;
     padding: 0 15px;
-    &:not(:last-child) {}
     margin-bottom: 30px;
   }
   &__item {
-    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
     background-color: #fff;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
     padding: 35px;
     > * {
       max-width: 230px;
@@ -186,4 +186,73 @@
   }
 }
 //?----------------------------- servises -- end -----------------------------
+//!----- achievements -----
+//?----------------------------- achievements ------------------------------------
+.page {
+  &__achievements {}
+}
+.achievements {
+  padding: 80px 0;
+  // margin-bottom: -15px;
+  &__container {}
+  &__header {
+    margin-bottom: 80px;
+  }
+  &__body {
+    margin: 0 -15px -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__column {
+    flex: 0 1 25%;
+    padding: 0 15px 15px;
+    // > *:not(:last-child) {
+    //   margin-bottom: 10px;
+    // }
+  }
+  &__item {
+    min-width: 240px;
+    // margin: 0 15px 15px;
+    height: 100%;
+    padding: 30px;
+    background-color: #fff;
+    text-align: center;
+    & > *:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  &__icon {}
+  &__value {
+    font-weight: 700;
+    font-size: 40px;
+    // line-height: calc(40px / 40px * 100%);
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(24px / 16px * 100%);
+    color: #737373;
+  }
+}
+.header-block {
+  text-align: center;
+  &__title {
+    // text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(50px / 40px * 100%);
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  &__sub-title {
+    margin: 0 auto;
+    // text-align: center;
+    font-size: 14px;
+    line-height: calc(20px / 14px * 100%);
+    color: #737373;
+    max-width: 500px;
+  }
+}
+//?----------------------------- achievements -- end -----------------------------
 @import "_media.scss";
