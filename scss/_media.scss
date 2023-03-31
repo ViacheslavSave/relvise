@@ -259,7 +259,9 @@
 //!------------------------  media -- 1080px  ------------------------
 @media(max-width:1080px) {
   .page {
-    &__achievements {}
+    &__achievements {
+      padding: 80px 0 40px;
+    }
   }
   .achievements {
     &__container {}
@@ -304,9 +306,93 @@
   }
 }
 //?----------------------------- achievements -- end -----------------------------
+//?----------------------------- advise -- media ---------------------------
+.page {
+  &__advice {}
+}
+.advice {
+  &__container {}
+  &__header {}
+  &__body {}
+  &__column {}
+  &__item {}
+}
+.header-block {
+  &__title {}
+  &__sub-title {}
+}
+.item-advice {
+  &__title {}
+  &__text {}
+  &__img {}
+}
+//!------------------------  media -- 1080px  ------------------------
+@media(max-width:1080px) {
+  .page {
+    &__advice {
+      padding: 40px 0 40px;
+    }
+  }
+  .advice {
+    &__container {}
+    &__header {}
+    &__body {}
+    &__column {
+      flex: 0 1 50%;
+    }
+    &__item {}
+  }
+  .header-block {
+    &__title {}
+    &__sub-title {}
+  }
+  .item-advice {
+    &__title {}
+    &__text {}
+    &__img {}
+  }
+}
+//!------------------------  media -- 580px  ------------------------
+@media(max-width:580px) {
+  .page {
+    &__advice {
+      padding: 20px 0 40px;
+    }
+  }
+  .advice {
+    &__container {}
+    &__header {
+      padding: 20px 0 40px;
+    }
+    &__body {
+      // margin: 0 -10px -10px;
+    }
+    &__column {
+      // padding: 0 10px 10px;
+      flex: 0 1 100%;
+    }
+    &__item {}
+  }
+  .header-block {
+    &__title {}
+    &__sub-title {}
+  }
+  .item-advice {
+    text-align: center;
+    &__content {
+      // align-items: center;
+      padding: 15px;
+    }
+    &__title {}
+    &__text {}
+    &__img {}
+  }
+}
+//?----------------------------- advise -- end -----------------------------
 // 1080
 // 992
 // 767
 // 650
+// 580
 // 479
 // 320
