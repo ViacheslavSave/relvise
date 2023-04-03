@@ -389,8 +389,526 @@
   }
 }
 //?----------------------------- advise -- end -----------------------------
+//?----------------------------- whoweare -- media ---------------------------
+.page {
+  &__whoweare {}
+}
+.whoweare {
+  &__container {}
+  &__header {}
+  &__body {}
+  &__video {}
+  &__content {}
+  &__title {}
+  &__text {}
+  &__items {}
+  &__item {}
+}
+.header-block {
+  &__title {}
+  &__sub-title {}
+}
+.item-whoweare {
+  &__icon {}
+  &__body {}
+  &__title {}
+  &__text {}
+}
+//!------------------------  media -- 1080px  ------------------------
+@media(max-width:1080px) {
+  .page {
+    &__whoweare {
+      padding: 70px 0 80px;
+    }
+  }
+  .whoweare {
+    &__container {}
+    &__header {
+      margin-bottom: 50px;
+    }
+    &__body {
+      flex-wrap: wrap;
+    }
+    &__video {
+      flex: 0 1 100%;
+      padding-bottom: calc(315 / 560 * 100%);
+    }
+    &__content {
+      margin-left: 0px;
+      // text-align: center;
+      order: -1;
+      // flex: 0 0 100%;
+      // display: flex;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__text {
+      text-align: center;
+    }
+    &__items {
+      margin-bottom: 30px;
+      display: flex;
+      > *:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+    &__item {
+      justify-content: center;
+    }
+  }
+  .item-whoweare {
+    flex: 1 1 auto;
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+    &__icon {}
+    &__body {}
+    &__title {}
+    &__text {}
+  }
+}
+//!------------------------  media -- 650px  ------------------------
+@media(max-width:650px) {
+  .page {
+    &__whoweare {
+      padding: 60px 0 40px;
+    }
+  }
+  .whoweare {
+    &__container {}
+    &__header {}
+    &__body {}
+    &__video {}
+    &__content {}
+    &__title {}
+    &__text {}
+    &__items {
+      display: block;
+      > *:not(:last-child) {
+        margin-right: 0px;
+      }
+    }
+    &__item {
+      justify-content: stretch;
+    }
+  }
+  .header-block {
+    &__title {}
+    &__sub-title {}
+  }
+  .item-whoweare {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    &__icon {}
+    &__body {}
+    &__title {}
+    &__text {}
+  }
+}
+//?----------------------------- whoweare -- end -----------------------------
+//?----------------------------- clients -- media ---------------------------
+.page {
+  &__clients {}
+}
+.clients {
+  &__container {}
+  &__items {}
+}
+.clients {
+  &__item {}
+}
+//!------------------------  media -- 767px  ------------------------
+@media(max-width:767px) {
+  .page {
+    &__clients {}
+  }
+  .clients {
+    &__container {}
+    &__items {
+      justify-content: center;
+      // flex-basis: 0 0 33.333%;
+    }
+    &__item {
+      // padding-bottom: 20px;
+      // flex: 0 0 33.333%;
+    }
+  }
+}
+//?----------------------------- clients -- end -----------------------------
+//!----- subscribe -----
+//?----------------------------- subscribe -- media ---------------------------
+.page {
+  &__subscribe {}
+}
+.subscribe {
+  &__container {}
+  &__body {}
+  &__title {}
+  &__form {}
+  &__email {}
+  &__button {}
+}
+//!------------------------  media -- 992px  ------------------------
+@media(max-width:992px) {
+  .page {
+    &__subscribe {}
+  }
+  .subscribe {
+    &__container {}
+    &__body {
+      margin: 0;
+    }
+    &__title {}
+    &__form {}
+    &__email {}
+    &__button {}
+  }
+}
+//!------------------------  media -- 767px  ------------------------
+@media(max-width:767px) {
+  .page {
+    &__subscribe {}
+  }
+  .subscribe {
+    &__container {}
+    &__body {
+      margin: 0px -15px;
+    }
+    &__title {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+    &__form {}
+    &__email {}
+    &__button {}
+  }
+}
+//!------------------------  media -- 767px  ------------------------
+@media(min-width:767px) {
+  .page {
+    &__subscribe {}
+  }
+  .subscribe {
+    &__container {}
+    &__body {
+      margin: 0px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__title {}
+    &__form {
+      flex: 0 1 50%;
+    }
+    &__email {}
+    &__button {}
+  }
+}
+//!------------------------  media -- 580px  ------------------------
+@media(min-width:580px) {
+  .page {
+    &__subscribe {}
+  }
+  .subscribe {
+    &__container {}
+    &__body {
+      padding: 30px 40px;
+    }
+    &__title {}
+    &__form {}
+    &__email {
+      padding-left: 20px;
+    }
+    &__button {}
+  }
+}
+//?----------------------------- subscribe -- end -----------------------------
+//!----- getintouch -----
+//?----------------------------- getintouch -- media ---------------------------
+//!------------------------  media -- 992px  ------------------------
+.page {
+  &__getintouch {}
+}
+.getintouch {
+  &__container {}
+  &__header {}
+  &__items {}
+  &__item {}
+}
+.item-getintouch {
+  &__icon {}
+  &__imails {}
+  &__email {}
+  &__label {}
+  &__button {}
+}
+@media(max-width:992px) {
+  .page {
+    &__getintouch {
+      padding: 70px 0 70px;
+    }
+  }
+  .getintouch {
+    &__container {}
+    &__header {
+      margin-bottom: 50px;
+    }
+    &__items {}
+    &__item {
+      padding: 30px 20px;
+    }
+  }
+  .item-getintouch {
+    &.item-getintouch__active {
+      // padding-top: 50px;
+      padding: 40px 20px;
+    }
+    &__icon {}
+    &__imails {}
+    &__email {}
+    &__label {}
+    &__button {}
+  }
+}
+//!------------------------  media -- 800px  ------------------------
+@media(min-width:800px) {
+  .page {
+    &__getintouch {}
+  }
+  .getintouch {
+    &__container {}
+    &__header {}
+    &__items {
+      display: flex;
+      //  text-align: center;
+      align-items: center;
+    }
+    &__item {
+      flex: 0 1 33.333%;
+    }
+  }
+  .item-getintouch {
+    &__icon {}
+    &__imails {}
+    &__email {}
+    &__label {}
+    &__button {}
+  }
+}
+//!------------------------  media -- 800px  ------------------------
+@media(max-width:800px) {
+  .page {
+    &__getintouch {}
+  }
+  .getintouch {
+    padding: 70px 0 50px;
+    &__container {}
+    &__header {}
+    &__items {
+      // flex-direction: column;
+      margin: 0 -15px;
+      // align-items: stretch;
+    }
+    &__item {
+      // flex: 0 0 100%;
+    }
+  }
+  .item-getintouch {
+    &.item-getintouch__active {
+      // padding: auto;
+      padding: 30px 20px;
+      // padding: 40px 20px 40px;
+    }
+    // width: 100%;
+    align-items: center;
+    // flex: 1 0 100%;
+    &__icon {}
+    &__imails {
+      display: flex;
+      flex-direction: column;
+    }
+    &__email {}
+    &__label {}
+    &__button {}
+  }
+}
+//?----------------------------- getintouch -- end -----------------------------
+//!----- contact -----
+//?----------------------------- contact -- media ---------------------------
+.page {
+  &__contact {}
+}
+.contact {
+  &__container {}
+  &__body {}
+  &__content {}
+  &__title {}
+  &__text {}
+  &__button {}
+}
+//!------------------  media -- max-width -- 479px  ------------------
+@media(max-width:479px) {
+  .page {
+    &__contact {}
+  }
+  .contact {
+    &__container {}
+    &__body {
+      // flex-wrap: wrap;
+    }
+    &__content {
+      margin-bottom: 30px;
+    }
+    &__title {}
+    &__text {}
+    &__button {}
+  }
+}
+//!------------------  media -- min-width -- 479px  ------------------
+@media(min-width:479px) {
+  .page {
+    &__contact {}
+  }
+  .contact {
+    &__container {}
+    &__body {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__content {}
+    &__title {}
+    &__text {}
+    &__button {
+      flex: 0 0 auto;
+      align-self: flex-start;
+    }
+  }
+}
+//?----------------------------- contact -- end -----------------------------
+//!----- footer -----
+//?----------------------------- footer -- media ---------------------------
+.footer {
+  &__top {}
+  &__container {}
+  &__column {}
+  &__label {}
+  &__menu {}
+  &__contacts {}
+  &__bottom {}
+  &__copy {}
+  &__social {}
+}
+.menu-footer {
+  &__list {}
+  &__item {}
+  &__link {}
+}
+.contacts-footer {
+  &__tel {}
+  &__map {}
+  &__mail {}
+}
+
+.footer {
+  &__bottom {}
+  &__container {}
+  &__copy {}
+  &__social {}
+}
+.social {
+  &__link {}
+}
+//!------------------  media -- max-width -- 992px  ------------------
+@media(max-width:992px){
+  .footer {
+    &__top {}
+    &__container {}
+    &__row{
+      flex-wrap: wrap;
+    }
+    &__column {}
+    &__label {}
+    &__menu {}
+    &__contacts {}
+    &__bottom {}
+    &__copy {}
+    &__social {}
+  }
+  .menu-footer {
+    &__list {}
+    &__item {}
+    &__link {}
+  }
+  .contacts-footer {
+    &__tel {}
+    &__map {}
+    &__mail {}
+  }
+  
+  .footer {
+    &__bottom {}
+    &__container {}
+    &__copy {}
+    &__social {}
+  }
+  .social {
+    &__link {}
+  }
+}
+
+//!------------------  media -- min-width -- 767px  ------------------
+@media(min-width:767px){
+  .footer {
+    &__top {}
+    &__container {}
+    &__column {}
+    &__label {}
+    &__menu {}
+    &__contacts {}
+    &__bottom {}
+    &__copy {}
+    &__social {}
+  }
+  .menu-footer {
+    &__list {}
+    &__item {}
+    &__link {}
+  }
+  .contacts-footer {
+    &__tel {}
+    &__map {}
+    &__mail {}
+  }
+  
+  .footer {
+    &__bottom {}
+    &__container {
+      // display: flex;
+      // justify-content: space-between;
+      // align-items: center;
+
+    }
+    &__box{
+    
+      // display: flex;
+       justify-content: space-between;
+flex-direction: row;
+      align-items: center;
+    }
+    &__copy { margin-bottom: 0px;}
+    &__social {}
+  }
+  .social {
+    &__link {}
+  }
+}
+
+//?----------------------------- footer -- end -----------------------------
 // 1080
 // 992
+// 800
 // 767
 // 650
 // 580
